@@ -2,7 +2,7 @@
 =======================
 https://github.com/Krreesh/kops/blob/master/docs/getting_started/aws.md
 ======================
-
+<pre>
 #update apt-get
 sudo apt-get update
 sudo apt-get install -y awscli
@@ -64,3 +64,4 @@ kops create cluster $NAME --zones us-east-1a --node-size t2.micro --master-size 
 kops update cluster  $NAME --yes --admin
 kops export kubecfg $NAME
 kubectl get nodes
+</pre>
